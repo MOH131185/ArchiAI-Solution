@@ -337,8 +337,8 @@ def get_exports(project_id: str, db_session) -> list:
 def create_cost_estimate(
     project_id: str,
     cost_data: dict,
-    excel_url: str = None,
-    db_session
+    db_session,
+    excel_url: str = None
 ) -> CostEstimate:
     """Create cost estimate record"""
     cost_estimate = CostEstimate(
@@ -385,8 +385,8 @@ def create_portfolio(
     name: str,
     description: str,
     files: dict,
-    analysis: dict = None,
-    db_session
+    db_session,
+    analysis: dict = None
 ) -> Portfolio:
     """Create a new portfolio"""
     portfolio = Portfolio(
