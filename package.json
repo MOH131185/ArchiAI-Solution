@@ -1,0 +1,16 @@
+{
+  "name": "archiai-solution",
+  "version": "1.0.0",
+  "description": "AI-powered architectural design system",
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "dev": "concurrently \"python main.py\" \"cd frontend && npm run dev\"",
+    "start": "python main.py"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
