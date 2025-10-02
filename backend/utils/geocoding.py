@@ -6,6 +6,10 @@ import requests
 import asyncio
 from typing import Tuple, Optional, Dict, Any
 import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 class GeocodingService:
     def __init__(self):

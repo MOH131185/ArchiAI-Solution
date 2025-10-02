@@ -11,6 +11,10 @@ from typing import List, Optional, Dict, Any
 import uvicorn
 import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Import services
 try:
