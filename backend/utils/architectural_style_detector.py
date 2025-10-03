@@ -7,7 +7,7 @@ import numpy as np
 from typing import Dict, Any, List, Tuple
 import json
 import os
-from ..ai_models.style_classifier import StyleClassifier
+from ai_models.style_classifier import StyleClassifier
 
 class ArchitecturalStyleDetector:
     def __init__(self):

@@ -4,12 +4,12 @@ Climate Service - Handles climate and weather data analysis
 
 import requests
 import asyncio
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, List
 from datetime import datetime, timedelta
 import json
 import os
-from ..utils.geocoding import get_coordinates
-from ..utils.climate_analysis import analyze_climate_patterns
+from utils.geocoding import get_coordinates
+from utils.climate_analysis import analyze_climate_patterns
 
 class ClimateService:
     def __init__(self):

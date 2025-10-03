@@ -8,12 +8,12 @@ from typing import Dict, Any, List, Optional, Tuple
 import json
 import os
 from dotenv import load_dotenv
-from ..utils.geocoding import get_coordinates
+from utils.geocoding import get_coordinates
 
 # Load environment variables
 load_dotenv()
-from ..utils.architectural_style_detector import ArchitecturalStyleDetector
-from ..utils.surroundings_3d import Surroundings3DGenerator
+from utils.architectural_style_detector import ArchitecturalStyleDetector
+from utils.surroundings_3d import Surroundings3DGenerator
 
 class LocationService:
     def __init__(self):

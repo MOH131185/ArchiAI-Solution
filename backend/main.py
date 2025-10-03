@@ -3,6 +3,15 @@ ArchiAI Solution - Main FastAPI Application
 AI-powered architectural design system
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to path so we can import ai_models
+backend_dir = Path(__file__).resolve().parent
+parent_dir = backend_dir.parent
+if str(parent_dir) not in sys.path:
+    sys.path.insert(0, str(parent_dir))
+
 from fastapi import FastAPI, HTTPException, UploadFile, File, Form
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
@@ -12,13 +21,13 @@ import uvicorn
 import os
 from datetime import datetime
 
-from .services.climate_service import ClimateService
-from .services.location_service import LocationService
-from .services.design_service import DesignService
-from .services.export_service import ExportService
-from .services.cost_service import CostService
-from .models.database import init_db
-from .models.schemas import *
+from services.climate_service import ClimateService
+from services.location_service import LocationService
+from services.design_service import DesignService
+from services.export_service import ExportService
+from services.cost_service import CostService
+from models.database import init_db
+from models.schemas import *
 
 app = FastAPI(
     title="ArchiAI Solution",

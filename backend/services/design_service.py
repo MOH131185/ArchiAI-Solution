@@ -7,10 +7,10 @@ import uuid
 from typing import Dict, Any, List, Optional
 import json
 import os
-from ..ai_models.style_classifier import DesignGenerator
-from ..services.structural_service import StructuralService
-from ..services.mep_service import MEPService
-from ..models.schemas import *
+from ai_models.style_classifier import DesignGenerator
+from services.structural_service import StructuralService
+from services.mep_service import MEPService
+from models.schemas import *
 
 class DesignService:
     def __init__(self):
